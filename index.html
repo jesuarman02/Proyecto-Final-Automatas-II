@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compilador JS a PHP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Compilador de JavaScript a PHP</h1>
+        <div class="row">
+            <div class="col-md-5">
+                <h3>Escribe tu código JavaScript</h3>
+                <textarea id="codigoJS" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="col-md-2 text-center">
+                <label id="subtema" for="temaSelect">Selecciona un tema:</label>
+                <select id="temaSelect" class="form-control mt-2">
+                    <option value="variables">Variables</option>
+                    <option value="funciones">Funciones</option>
+                    <option value="estructurasControl">Estructuras de Control</option>
+                    <option value="arrays">Arrays</option>
+                    <option value="clasesYObjetos">Clases y Objetos</option>
+                </select>
+                <button id="btnGenerar" class="btn btn-primary mt-2" onclick="transformarJSaPHP()">Generar PHP</button>
+                <button id="btnLimpiar" class="btn btn-danger mt-2" onclick="limpiarCampos()">Limpiar</button>
+            </div>
+            <div class="col-md-5">
+                <h3>Código PHP Generado</h3>
+                <textarea id="codigoPHP" class="form-control" rows="10" readonly></textarea>
+                <button id="btnCopiar" class="btn btn-success mt-2" onclick="copiarAlPortapapeles()">Copiar Código PHP</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

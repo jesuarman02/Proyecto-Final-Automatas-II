@@ -1,0 +1,55 @@
+    Variables
+
+let nombre = "Juan";
+const edad = 30;
+var ciudad = "Madrid";
+
+console.log(nombre);
+console.log(edad);
+console.log(ciudad);
+
+
+    Funciones
+
+(Funcion Normal) function suma(a, b) { return a + b; }
+
+(Funcion flecha) const sumar = (a, b) => a + b;
+
+(Funcion anonima) const sumar = function(a, b) {
+    return a + b;
+};
+
+
+
+    Estructuras de control
+
+let contador = 0;
+
+while (contador < 5) {
+  console.log("Contador: " + contador);
+  contador++;
+}
+
+if (a > b) {
+    console.log("A es mayor que B");
+} else {
+    console.log("B es mayor o igual que A");
+}
+
+for (let i = 0; i < 10; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+
+    arrays
+
+const frutas = ["manzana", "banana", "naranja"];
+
+clases y objetos
+  
+class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+}
